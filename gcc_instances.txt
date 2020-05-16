@@ -1,0 +1,43 @@
+sw/ground_segment/tmtc/Makefile:113:CC = gcc
+sw/ground_segment/cockpit/Makefile:131:#CC = gcc
+sw/ground_segment/joystick/Makefile:29:CC = gcc
+sw/ground_segment/lpc21iap/Makefile:15:CC      = gcc
+sw/ground_segment/misc/Makefile:26:CC = gcc
+sw/airborne/arch/lpc21/test/Makefile:77:# it will preserve the spelling of the filenames, and gcc itself does
+sw/airborne/arch/lpc21/test/Makefile:125:# Flags for C and C++ (arm-elf-gcc/arm-elf-g++)
+sw/airborne/arch/lpc21/test/Makefile:169:LDFLAGS += -lc -lgcc
+sw/airborne/arch/lpc21/test/Makefile:208:CC = $(DIRARMBIN)/arm-elf-gcc
+sw/airborne/arch/lpc21/test/Makefile:262:all: begin gccversion sizebefore build sizeafter finished end
+sw/airborne/arch/lpc21/test/Makefile:295:gccversion :
+sw/airborne/arch/lpc21/test/Makefile:425:.PHONY : all begin finish end sizebefore sizeafter gccversion \
+sw/airborne/arch/lpc21/lpcusb/Makefile:41:CC   = $(shell which arm-elf-gcc)
+sw/airborne/arch/lpc21/lpcusb/Makefile:42:LD   = $(shell which arm-elf-gcc)
+sw/airborne/arch/lpc21/lpcusb/examples/Makefile:8:CC      = arm-elf-gcc
+sw/airborne/math/Makefile:9:CC= gcc
+sw/airborne/modules/digital_cam/catia/Makefile:15:	gcc $(CFLAGS) $(CFILES) catia.c -o catia $(LINK)
+sw/airborne/test/Makefile:6:CC = gcc
+sw/airborne/test/ahrs/Makefile:5:CC = gcc
+sw/airborne/firmwares/non_ap/led_flasher/Makefile:14:CC      = avr-gcc
+sw/simulator/scilab/q3d/fonts/Makefile:4:CC = gcc
+sw/logalizer/Makefile:94:#CC = gcc
+sw/misc/satcom/Makefile:7:	gcc -g -O2 -Wall -o $@ $^
+sw/misc/satcom/Makefile:9:	gcc -g -O2 -Wall -o $@ $^
+sw/misc/satcom/Makefile:11:	gcc -g -O2 -Wall $(shell pkg-config glib-2.0 --cflags) -o $@ $^ $(shell pkg-config glib-2.0 --libs) -lglibivy -lm
+sw/misc/satcom/Makefile:13:	gcc -g -O2 -Wall $(shell pkg-config glib-2.0 --cflags) -I../../../var/aircrafts/${AIRCRAFT} -o $@ $^ $(shell pkg-config glib-2.0 --libs) -lglibivy -lm
+sw/misc/turbine/Makefile:5:CC=gcc
+sw/misc/log_parser/Makefile:14:CC      = gcc
+sw/misc/inertial/C/Makefile:9:	gcc -c -Wall $(CFLAGS) -o $@ $<
+sw/misc/inertial/C/Makefile:29:	gcc  -o $@ $^ $(LDFLAGS)
+sw/misc/inertial/C/Makefile:42:	gcc  -o $@ $^ $(LDFLAGS)
+sw/misc/inertial/C/Makefile:52:	gcc  -o $@ $^ $(LDFLAGS)
+sw/misc/inertial/C/Makefile:69:	gcc  -o $@ $^ $(LDFLAGS)
+sw/misc/inertial/C/Makefile:87:	gcc  -o $@ $^ $(LDFLAGS)
+sw/misc/inertial/C/Makefile:97:	gcc  -o $@ $^ $(LDFLAGS)
+sw/misc/inertial/C/Makefile:108:	gcc  -o $@ $^ $(LDFLAGS)
+sw/misc/inertial/C/Makefile:121:	gcc  -o $@ $^ $(LDFLAGS)
+sw/misc/inertial/C/Makefile:129:	gcc  -o $@ $^ $(LDFLAGS)
+sw/misc/button/Makefile:72:CC = gcc
+sw/misc/button/Makefile:110:	gcc -g -O2 -Wall $(shell pkg-config glib-2.0 --cflags) -o $@ $^ $(shell pkg-config glib-2.0 --libs) -lglibivy -lhid
+sw/tools/Makefile:25:CC = gcc
+sw/tools/gps_ublox_conf/Makefile:5:CC=gcc
+sw/tools/bluegiga_usb_dongle/Makefile:2:CC = gcc

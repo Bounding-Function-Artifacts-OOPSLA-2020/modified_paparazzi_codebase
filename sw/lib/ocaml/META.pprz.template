@@ -1,0 +1,18 @@
+description = "Paparazzi UAS package"
+<<<<<<< HEAD
+requires = "unix,str,pprzlink,xml-light,lablgtk2,glibivy,netclient,nettls-gnutls"
+=======
+requires = "unix,str,pprzlink,xml-light,lablgtk2,glibivy,netclient,NETTLS_GNUTLS"
+>>>>>>> 5926b573a907e168704d2426ee3d50a02e32d1b3
+version = "1.0"
+directory = ""
+
+archive(byte) = "lib-pprz.cma"
+archive(native) = "lib-pprz.cmxa"
+
+package "xlib" (
+  requires = "pprz,LABLGTK2GNOMECANVAS,lablgtk2.glade"
+  version = "1.0"
+  archive(byte) = "xlib-pprz.cma"
+  archive(native) = "xlib-pprz.cmxa"
+)
